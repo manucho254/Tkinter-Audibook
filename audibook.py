@@ -26,7 +26,7 @@ root.geometry("375x300")
 root.configure(bg="#003152")
 root.resizable(width=0, height=0)
 
-img = PhotoImage(file="audio.png", width=600, height=100)
+img = PhotoImage(file="final.png", width=600, height=100)
 lab = Label(root)
 lab.grid()
 lab["compound"] = LEFT
@@ -72,7 +72,7 @@ def convert():
             data = page.extractText()
 
         final_file = gTTS(text=data, lang='en')
-        filename = "Audiobook." + str(datetime.datetime.now().date())
+        filename = "Audiobook-" + str(datetime.datetime.now().date())
         final_file.save(filename + ".mp3")
         messagebox.showinfo("Success", "Audiobook Created")
     except:
