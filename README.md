@@ -1,7 +1,7 @@
 # Tkinter-Audibook
 This is a tkinter based audibook creation tool written in python.
 
-<img src="cool.png"/>
+<img src="final.png"/>
 
 # Dependencies
 </br>
